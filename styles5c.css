@@ -1,0 +1,21 @@
+.text-container {
+    text-align: center;
+    margin-top: 200px;
+  }
+  
+  .animated-text {
+    animation: textAnimation 2s infinite;
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      font-size: 20px;
+    }
+    50% {
+      font-size: 40px;
+    }
+    100% {
+      font-size: 20px;
+    }
+  }
+  

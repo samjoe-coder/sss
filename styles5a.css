@@ -1,0 +1,16 @@
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .slider-image {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-image:first-child {
+    display: block;
+  }
+  

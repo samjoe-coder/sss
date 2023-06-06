@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hide and Show Elements</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleElement()">Toggle Element</button>
+  <div id="myElement">This is a hidden element.</div>
+
+  <script>
+     function toggleElement() {
+  var element = document.getElementById("myElement");
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+
+
+  </script>
+</body>
+</html>
