@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Player</title>
+</head>
+<body>
+  <h1>Video Player</h1>
+  <div id="videoList">
+    <ul>
+      <li><a href="#" onclick="playVideo('video1.mp4')">Video 1</a></li>
+      <li><a href="#" onclick="playVideo('video2.mp4')">Video 2</a></li>
+      <li><a href="#" onclick="playVideo('video3.mp4')">Video 3</a></li>
+    </ul>
+  </div>
+  <video id="videoPlayer" controls></video>
+
+  <script>
+     function playVideo(videoUrl) {
+  var videoPlayer = document.getElementById('videoPlayer');
+  videoPlayer.src = videoUrl;
+  videoPlayer.play();
+}
+
+
+  </script>
+</body>
+</html>
