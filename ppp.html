@@ -1,0 +1,145 @@
+<!-- cookie program-->
+
+<!-- <?php
+
+echo "Welcome to cookies!";
+
+setcookie('username', 'John Doe');
+setcookie('password', 'sam123');
+
+
+?> -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <titile>Cookies login</titile>
+    </head>
+    <body>
+        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
+<?php
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$storedUsername = $_COOKIE['username'];
+$storedPassword = $_COOKIE['password'];
+
+if ($username === $storedUsername && $password === $storedPassword) {
+    echo "Welcome, " . $username . "!";
+} else {
+    echo "Invalid login details. Please try again.";
+}
+
+
+?> -->
+
+<!-- color program -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Display User Name and Favorite Color</title>
+    <style>
+        body {
+            background-color: <?php echo $_POST['color']; ?>;
+        }
+        
+        .green-text {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $color = $_POST['color'];
+        
+        echo "<h1 class='green-text'>$name</h1>";
+        echo "<p>Your favorite color is $color.</p>";
+    }
+    ?>
+    
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->
+
+<!-- 9th program -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page using MySQL</title>
+</head>
+<body>
+    <h1>Register Please</h1>
+    <form method="POST" action="MySql.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->
+
+<!-- <?php
+
+$name = $_POST['name'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+
+// Connect to the database
+$connection = mysqli_connect('localhost', 'sam', '123sam', 'registration');
+
+// Check if the connection was successful
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Insert the user's details into the database
+
+$sql = "INSERT INTO users (name, username, password) VALUES ('$name', '$username', '$password')";
+
+if (mysqli_query($connection, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" .
+    mysqli_error($connection);
+}
+
+// Close the connection
+mysqli_close($connection);
+
+
+?> -->
+
+
+
+
